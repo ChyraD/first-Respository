@@ -25,4 +25,13 @@ public class itemclass {
 	public String toString() {
 		return name;
 	}
-}
+	public class item {
+		public void open() {
+			Game.print("You can't open that!");
+		}
+		public void use() {
+			Game.print("You can't use that!");
+		}
+	}
+}	
+	
