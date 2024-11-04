@@ -1,7 +1,6 @@
 import itemclass.item;
 
 public class playerInventory {
-private class
 }
 
 public class Game {

@@ -3,6 +3,7 @@ public class Safe extends Item {
 	public safe(String name, String description) {
 		super(name, description);
 	}
+	
 	@Override
 	public void open() {
 		Item Combination = Game.getplayer().getItemFromInventory("combination");
