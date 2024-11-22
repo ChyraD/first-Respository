@@ -16,3 +16,25 @@ public class Roomclass {
 		this.item = item;
 	}
 }
+
+public class Room {
+	private boolean locked;
+	private String name;
+	
+	public Room(String name) {
+		this.name = name;
+		this.locked = false;
+	}
+	public boolean islocked() {
+		return locked;
+	}
+	public void setLocked(boolean locked) {
+		this.locked = locked;
+	}
+	public String getname() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+}

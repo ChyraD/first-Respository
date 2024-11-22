@@ -4,6 +4,7 @@ public class playerInventory {
 }
 
 public class Game {
+	private Room currentRoom;
 	public staticvoid print(Object obj) {
 		System.out.println(obj.toString());
 	}
@@ -19,6 +20,15 @@ public class Game {
 	}
 	return null;
 }
+	public void enterRoom(Room room) {
+		if(room.locked()) {
+			System.out.println("The room is locked, you will need a key to enter");
+		}else {
+			currentRoom = room;
+			System.out.println("you have entered" + room.getName()+ ".");
+		}
+	}
+	public void unlock
 	switch (command) {
 		case "use":
 			item itemToUse = getItemFromRoomOrInventory(itemName);
